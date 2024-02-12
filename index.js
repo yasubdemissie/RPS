@@ -31,13 +31,24 @@ let displayImg = setInterval(function() {
 }, 100);
 
 const winner = function(choice, comp) {
-    if (choice == 'rock'  == checkArr[1]) {
+    if (choice === 'rock') {
+      if (comp === 'scissors') {
+        return 'You';
+      } else if (comp === 'paper') {
         return 'Computer';
-    } else if (choice == 'paper' && comp == checkArr[0]) {
-        return "Computer";
-    } else if (choice == 'scissors' && comp == checkArr[2]) {
-        return "Computer";
-    } else if(choice == comp) {
-        return 0;
-    } else return "You";
-}
+      }
+    } else if (choice === 'paper') {
+      if (comp === 'rock') {
+        return 'You';
+      } else if (comp === 'scissors') {
+        return 'Computer';
+      }
+    } else if (choice === 'scissors') {
+      if (comp === 'paper') {
+        return 'You';
+      } else if (comp === 'rock') {
+        return 'Computer';
+      }
+    }
+    return 0; // It's a tie
+  }
