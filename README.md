@@ -1,4 +1,4 @@
-# RPS
+# ROCK PAPER SCISSORS GAME
 Group 4
 Yasub Demissie ETS1632/14
 Yeabtsega Tesfaye ETS1660/14
