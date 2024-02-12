@@ -1,8 +1,8 @@
-const choice = document.querySelector('.player_result');
-const gameArea = document.querySelector('.game_area');
-const random = document.querySelector('.computer');
-const arr = ['✂️', '📜', '🪨'];
-const checkArr = ['scissors', 'paper', 'rock'];
+let choice = document.querySelector('.player_result');
+let gameArea = document.querySelector('.game_area');
+let random = document.querySelector('.computer');
+let arr = ['✂️', '📜', '🪨'];
+let checkArr = ['scissors', 'paper', 'rock'];
 let randomChoice = Math.floor(Math.random() * 3);
 
 let clicked;
@@ -21,16 +21,16 @@ let displayImg = setInterval(function() {
     i < 2 ? i++ : i = 0; 
     if (chosen) {
         clearInterval(displayImg);
-        const computer = checkArr[randomChoice];
+        let computer = checkArr[randomChoice];
         random.innerHTML = `<button style="font-size: 5rem" class="btn" type="button">${arr[randomChoice]}</button>`;
-        const pressed = clicked.classList[1];
-        const result = winner(pressed, computer);
-        const win = result == 0 ? `<h3>There is no winner</h3>` : `<h3>The winner of the game is : ${result}</h3>`;
+        let pressed = clicked.classList[1];
+        let result = winner(pressed, computer);
+        let win = result == 0 ? `<h3>There is no winner</h3>` : `<h3>The winner of the game is : ${result}</h3>`;
         gameArea.insertAdjacentHTML("afterend", win);
     }
 }, 100);
 
-const winner = function(choice, comp) {
+let winner = function(choice, comp) {
     if (choice === 'rock') {
       if (comp === 'scissors') {
         return 'You';
