@@ -1,0 +1,15 @@
+font-family: 'Alfa Slab One', serif;
+font-family: 'Cinzel', serif;
+font-family: 'DM Serif Display', serif;
+font-family: 'DotGothic16', sans-serif;
+font-family: 'Great Vibes', cursive;
+font-family: 'Kalnia', serif;
+font-family: 'Lemon', serif;
+font-family: 'Lobster', sans-serif;
+font-family: 'Noto Serif', serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Rubik Broken Fax', system-ui;
+font-family: 'Rubik Burned', system-ui;
+font-family: 'Rubik Lines', system-ui;
+font-family: 'Russo One', sans-serif;
+font-family: 'Seymour One', sans-serif;

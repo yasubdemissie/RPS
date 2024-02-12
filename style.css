@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+body {
+  background-image: url(lunar.jpg);
+  color: white;
+  font-family: "Great Vibes", cursive;
+}
+h1 {
+  font-family: "Lobster", sans-serif;
+  margin-top: 3rem;
+  line-height: 2.5;
+  font-size: 3rem;
+  color: rgb(216, 167, 249);
+}
+h2 {
+  font-family: "Lemon", serif;
+  font-size: 2rem;
+  color: rgb(227, 191, 191);
+  word-spacing: 2rem;
+}
+h3 {
+  font-size: 2rem;
+  font-family: "Lobster", sans-serif;
+  color: rgb(219, 234, 235);
+  background: #00000073;
+  border: none;
+  margin: auto;
+  margin-top: 1rem;
+  border-radius: 13px;
+  width: 50%;
+}
+.game_area {
+  display: flex !important;
+  justify-content: space-evenly;
+  width: 50%;
+  margin: auto;
+  margin-top: 5rem;
+}
+.block {
+  margin: auto;
+  background: #00000093;
+  border-radius: 12px;
+  width: 200px;
+  height: 200px;
+}
+.player_result {
+  text-align: center;
+  display: flex;
+}
+.player_result button,
+.computer button {
+  margin: 40px auto 40px auto;
+  font-size: 2rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+button:hover {
+  background: #f0ededc8;
+  transition: all 0.3s;
+  transform: scale(1.1);
+}
